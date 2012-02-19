@@ -25,13 +25,13 @@ curl: (52) Empty reply from server
 Launch thin directly:
 
 ```bash
-bundle exec thin start
+bundle exec rackup -I .
 ```
 
 In a separate shell, run:
 
 ```bash
-curl http://localhost:3000
+curl http://localhost:9292
 ```
 You should see:
 
